@@ -9,10 +9,18 @@
     height: 340px;
     z-index: 3;
     color: $text-color;
+    &.active {
+        color: black;
+        transition: all 0.6s;
+    }
     &__divider {
         width: 2px;
         height: 70px;
         background-color: $text-color;
+        &.active {
+            background-color: black;
+            transition: all 0.6s;
+        }
     }
     &__text {
         height: 150px;
@@ -21,6 +29,14 @@
             transform: rotate(-90deg) translate(-30%,-260%);
             display: block;
             width: 150px;
+        }
+    }
+    #facebook, #instagram, #github {
+        &.active {
+            path {
+                fill: black;
+                transition: all 0.6s;
+            }
         }
     }
 }
