@@ -18,17 +18,14 @@
     }
     &__descr {
         padding-top: 6px;
+        .divider {
+            margin: 0;
+        }
     }
     &__title {
         position: relative;
         padding: 1px 0 0 12px;
         @include before_circle;
-    }
-    .divider {
-        position: absolute;
-        width: 60px;
-        height: 3px;
-        background-color: $main-color;
     }
     &__text {
         margin-top: 20px;
@@ -58,6 +55,7 @@
         }
     }
     &__skills-text {
+        margin-top: 6px;
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
