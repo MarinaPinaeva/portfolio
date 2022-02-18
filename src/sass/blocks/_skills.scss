@@ -1,18 +1,5 @@
 .skills {
     padding-top: 120px;
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        &:before {
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle {
-        text-align: center;
-    }
     &__items {
         padding: 60px 10px 0 10px;
         display: grid;
@@ -70,7 +57,7 @@
     &__progress-line {
         width: 350px;
         height: 14px;
-        background: #E8E4DE;;
+        background: #E8E4DE;
         border-radius: 4px;
         grid-column: 1/3;
         span {
